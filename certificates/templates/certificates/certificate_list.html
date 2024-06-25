@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate List</title>
+</head>
+<body>
+    <h1>Your Certificates</h1>
+    <ul>
+        {% for certificate in certificates %}
+            <li><a href="{{ certificate.certificate_file.url }}">{{ certificate.name }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

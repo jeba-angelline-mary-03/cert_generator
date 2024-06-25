@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Generator Home</title>
+    <!-- Load the static tag -->
+    {% load static %}
+    <!-- Link to the static CSS file -->
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Certificate Generator</h1>
+        <p><a href="{% url 'upload_file' %}">Upload Certificate Names</a></p>
+    </div>
+</body>
+</html>
